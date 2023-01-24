@@ -13,6 +13,8 @@ function App() {
       >
         Change to {newButtonColor}
       </button>
+      <br />
+      <input type="checkbox" id="disable-button-checkbox" />
     </div>
   )
 }
