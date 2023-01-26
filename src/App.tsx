@@ -1,6 +1,10 @@
 import React, { useState, ChangeEvent } from 'react'
 import './App.css'
 
+export const replaceCamelWithSpaces = (colorName: string) => {
+  return colorName.replace(/\B([A-Z])\B/g, ' $1')
+}
+
 function App() {
   const [buttonColor, setButtonColor] = useState('red')
   const newButtonColor = buttonColor === 'red' ? 'blue' : 'red'
